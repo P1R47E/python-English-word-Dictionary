@@ -14,3 +14,9 @@ def translator(words):
         suggestion = suggestion.upper()
         if suggestion == "Y":
             return data[get_close_matches(words,data.keys())[0]]
+        elif suggestion =="N":
+            return "sorry the word doesn't exist,please check it again"
+        else:
+            return "sorry we didn't understand your response"
+    else:
+        return "sorry the word doesn't exist,please check it again"
