@@ -20,3 +20,11 @@ def translator(words):
             return "sorry we didn't understand your response"
     else:
         return "sorry the word doesn't exist,please check it again"
+word = input("Please Enter the word to translate: ")
+output = (translator(word))
+
+if type(output) == list:
+    for item in output:#to ommit the list from when output the definition
+        print(item)
+else:
+    print(output)
